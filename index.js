@@ -22,3 +22,9 @@ const db = mysql.createConnection({
   database: 'mahasiswa',
   port: 3308
 });
+db.connect((err) => {
+  if (err) {
+      console.error('Error connecting to database:', err);
+      return;
+  }
+});
