@@ -13,3 +13,12 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+let mysql = require('mysql2');
+
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'ComalMelati3',
+  database: 'mahasiswa',
+  port: 3308
+});
